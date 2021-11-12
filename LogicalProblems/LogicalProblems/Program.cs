@@ -9,7 +9,7 @@ namespace LogicalProblems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose an Option To Execute the Program\n 1.FibonacciSeries\n 2.ReverseOfNumber\n 3.PrimeNumber\n 4.Exit");
+                Console.WriteLine("Choose an Option To Execute the Program\n 1.FibonacciSeries\n 2.ReverseOfNumber\n 3.PrimeNumber\n 4.PerfectNumber\n 5.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -32,6 +32,12 @@ namespace LogicalProblems
                         result2.Prime(number2);
                         break;
                     case 4:
+                        Console.WriteLine("Enter The Number");
+                        int number3 = Convert.ToInt32(Console.ReadLine());
+                        PerfectNumber result3 = new PerfectNumber ();
+                        result3.Perfect(number3);
+                        break;
+                    case 5:
                         flag = false;
                         break;
                     default:
